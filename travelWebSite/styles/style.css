@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  margin: 0;
+
+  background-image: url(../img/header/headerbg.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header-nav {
+  display: flex;
+  gap: 0 40px;
+  color: white;
+  max-width: 100%;
+}
+
+.nav-element {
+  margin-top: 58px;
+}
+
+.header-nav {
+  justify-content: space-evenly;
+}
+
+.nav-link-logo {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 0.9;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-contactBtn {
+  font-weight: 700;
+  /* font-size: 16px; */
+  color: #1e1e1e;
+  background-color: #fff;
+  padding: 5px 35px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-title {
+  max-width: 820px;
+  position: absolute;
+  top: 300px;
+  left: 140px;
+}
+
+.header-title-txt {
+  text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.header-title-btns {
+  display: flex;
+  gap: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.9;
+  color: white;
+  margin-top: 40px;
+}
+
+.book-now-btn {
+  border: 3px solid #fff;
+  border-radius: 58px;
+  padding: 10px 31px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.learn-more-btn {
+  border: 3px solid #fff;
+  border-radius: 58px;
+  padding: 10px 31px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.book-now-btn:hover,
+.learn-more-btn:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.company-list {
+  margin-top: 105px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
