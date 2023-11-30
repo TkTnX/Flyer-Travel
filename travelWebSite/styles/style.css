@@ -8,10 +8,21 @@ html {
   box-sizing: inherit;
 }
 
+.none {
+  display: none;
+}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -46,15 +57,12 @@ header {
   display: flex;
   gap: 0 40px;
   color: white;
+  justify-content: space-evenly;
   max-width: 100%;
 }
 
 .nav-element {
   margin-top: 58px;
-}
-
-.header-nav {
-  justify-content: space-evenly;
 }
 
 .nav-link-logo {
@@ -132,4 +140,198 @@ header {
   display: flex;
   align-items: center;
   gap: 100px;
+}
+
+.about_us-information {
+  margin-top: 140px;
+  margin-bottom: 190px;
+}
+
+.about_us-inner {
+  display: flex;
+  gap: 0 130px;
+  align-items: center;
+}
+
+.about_us-left {
+  position: relative;
+}
+
+.about_us-img-absolute {
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+.about_us-achivments {
+  display: flex;
+  gap: 0 70px;
+}
+
+.about_us-title {
+  color: #00ad30;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.about_us-subtitle {
+  color: #202020;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 605px;
+  margin-bottom: 15px;
+}
+
+.about_us-description {
+  color: #9a9a9a;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 635px;
+  margin-bottom: 30px;
+}
+
+.about_us-achivments {
+  color: #00ad30;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about_us-achivments h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.about_us-achivments p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.destinations {
+  margin-bottom: 100px;
+}
+
+.destinations-title {
+  color: #00ad30;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.destinations-subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.destinations_subtitle-left {
+  color: #202020;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.destinations_subtitle-right {
+  max-width: 520px;
+  color: #9a9a9a;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.destinations-cards {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  height: 500px;
+  width: 375px;
+  color: white;
+}
+
+.card1 {
+  background-image: url(../img/destinations/japan.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card2 {
+  background-image: url(../img/destinations/greece.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card3 {
+  background-image: url(../img/destinations/maldives.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.card-price {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.card-estimation {
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 200px;
+  max-width: 135px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 40px;
+  top: 32px;
+}
+
+.destination-score {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-down-txt {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  gap: 0 15px;
 }

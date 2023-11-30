@@ -1,3 +1,331 @@
+@media (max-width: 1200px) {
+  .company-logos img {
+    width: 200px;
+  }
+  .company-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destinations-title {
+    margin-left: 55px;
+  }
+
+  .destinations-subtitle {
+    justify-content: space-around;
+  }
+
+  .destinations-cards {
+    justify-content: space-around;
+  }
+
+  .card {
+    height: 400px;
+    width: 300px;
+  }
+  .card-price {
+    gap: 0 10px;
+  }
+}
+
 @media (max-width: 1000px) {
-    
+  .header-nav {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .company-logos img {
+    width: 150px;
+  }
+  .company-list {
+    flex-wrap: wrap;
+  }
+  .about_us-achivments {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destinations-title {
+    margin-top: 20px;
+  }
+
+  .destinations-subtitle {
+    margin-top: 10px;
+  }
+
+  .destinations-subtitle {
+    justify-content: space-around;
+  }
+
+  .destinations_subtitle-left {
+    font-size: 30px;
+  }
+  .destinations_subtitle-right {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 920px) {
+  .header-title-txt {
+    margin-top: -100px;
+    font-size: 55px;
+  }
+
+  .header-nav {
+    margin-top: 0;
+    gap: 0;
+  }
+  .header-title-btns {
+    gap: 350px;
+  }
+
+  .company-list {
+    justify-content: center;
+  }
+
+  .company-logos img {
+    width: 100px;
+  }
+  .about_us-subtitle {
+    font-size: 34px;
+  }
+  .about_us-description {
+    font-size: 18px;
+  }
+  .about_us-achivments h3 {
+    font-size: 35px;
+  }
+  .about_us-achivments p {
+    font-size: 16px;
+  }
+
+  .destinations-subtitle {
+    gap: 50px;
+  }
+
+  .destinations-cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 898px) {
+  .card3 {
+    margin-top: 50px;
+  }
+  .destinations-subtitle {
+    max-width: 900px;
+    margin-left: 50px;
+  }
+  .destinations_subtitle-left {
+    font-size: 20px;
+  }
+  .destinations_subtitle-right {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 820px) {
+  .header-title-txt {
+    font-size: 45px;
+  }
+  .header-title-btns {
+    margin-left: -70px;
+    font-size: 14px;
+  }
+  .about_us-inner {
+    gap: 80px;
+  }
+}
+
+@media (max-width: 762px) {
+  header {
+    background-position: bottom center;
+  }
+  /* 
+  .nav-link,
+  .header-contactBtn {
+    display: none;
+  }
+
+  .header-nav {
+    justify-content: start;
+  }
+
+  .nav-link-logo {
+    display: block;
+  } */
+  .header-nav,
+  .nav-link {
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .nav-link-logo {
+    font-size: 24px;
+  }
+
+  .header-title-btns {
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .about_us-title {
+    font-size: 18px;
+  }
+
+  .about_us-subtitle {
+    font-size: 26px;
+  }
+  .about_us-description {
+    font-size: 14px;
+  }
+  .about_us-achivments h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    background-position: bottom right;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .menu_btn {
+    display: flex;
+    min-width: 40px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 45px;
+  }
+
+  .menu_btn span {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+  }
+
+  .nav-link-logo {
+    display: block;
+  }
+  .header-title-txt {
+    font-size: 36px;
+    text-align: right;
+  }
+  .header-title-btns {
+    margin-left: 180px;
+    margin-right: 0;
+    width: 150px;
+    flex-direction: column;
+  }
+  .about_us-inner {
+    gap: 40px;
+  }
+  .about_us-left img {
+    width: 250px;
+  }
+  .about_us-img-absolute img {
+    width: 160px;
+  }
+
+  .card {
+    height: 300px;
+    width: 250px;
+  }
+  .card-price {
+    flex-direction: column;
+  }
+  .card-estimation {
+    max-width: 100px;
+    right: 0px;
+  }
+  .card-down-txt {
+    padding-top: 500px;
+  }
+}
+
+@media (max-width: 510px) {
+  .card {
+    height: 300px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 475px) {
+  .header-title-btns {
+    margin-left: 80px;
+  }
+  .company-list {
+    display: none;
+  }
+
+  .about_us-information {
+    margin-top: 80px;
+  }
+
+  .about_us-achivments {
+    flex-direction: column;
+  }
+
+  .header-contactBtn {
+    margin-left: -100px;
+  }
+  .about_us-title {
+    font-size: 10px;
+  }
+
+  .about_us-subtitle {
+    font-size: 16px;
+  }
+  .about_us-description {
+    font-size: 12px;
+  }
+  .about_us-achivments h3 {
+    font-size: 20px;
+  }
+  .about_us-achivments p {
+    font-size: 14px;
+  }
+  .about_us-left img {
+    width: 150px;
+  }
+  .about_us-img-absolute img {
+    width: 120px;
+  }
+  .destinations_subtitle-right {
+    font-size: 12px;
+  }
+  .destinations_subtitle-left {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    margin-bottom: 50px;
+    max-height: 400px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header-contactBtn {
+    display: none;
+  }
+  .header-nav {
+    margin-left: 200px;
+  }
+  .header-title-txt {
+    margin-top: -150px;
+    text-align: center;
+    margin-left: -150px;
+  }
+  .header-title-btns {
+    margin-left: -40px;
+  }
 }
