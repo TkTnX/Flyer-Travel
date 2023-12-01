@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <nav class="header-nav">
-        <button class="menu_btn">
+        <button type="button" class="menu_btn" id="menu_btn">
           <span></span>
           <span></span>
           <span></span>
@@ -29,10 +29,10 @@
           <a href="#" class="nav-link"> Home </a>
         </ul>
         <ul class="nav-element">
-          <a href="#" class="nav-link"> About Us </a>
+          <a href="#about_us-information" class="nav-link"> About Us </a>
         </ul>
         <ul class="nav-element">
-          <a href="#" class="nav-link"> Destinations </a>
+          <a href="#destinations" class="nav-link"> Destinations </a>
         </ul>
         <ul class="nav-element">
           <a href="#" class="nav-link"> Discover </a>
@@ -48,6 +48,32 @@
         <div class="header-title-btns">
           <div class="book-now-btn">Book Now</div>
           <div class="learn-more-btn">Learn More</div>
+        </div>
+      </div>
+      <div class="burger-menu" id="burger-menu">
+        <div class="mobile-list-inner" id="mobile-list-inner">
+          <button class="closeBtn-header" id="closeBtn-header">
+            <img src="img/popup-menu/closeicon.svg" alt="" />
+          </button>
+          <ul class="mobile-list">
+            <li class="mobile-list-element">
+              <a href="#" class="mobile-list-link">Home</a>
+            </li>
+            <li class="mobile-list-element">
+              <a href="#about_us-information" class="mobile-list-link"
+                >About Us</a
+              >
+            </li>
+            <li class="mobile-list-element">
+              <a href="#destinations" class="mobile-list-link">Destinations</a>
+            </li>
+            <li class="mobile-list-element">
+              <a href="#" class="mobile-list-link">Discover</a>
+            </li>
+            <li class="mobile-list-element mobile-list-contact_btn">
+              <a href="#" class="mobile-list-link">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -70,7 +96,7 @@
           </ul>
         </div>
       </section>
-      <section class="about_us-information ">
+      <section class="about_us-information" id="about_us-information">
         <div class="container">
           <div class="about_us-inner">
             <div class="about_us-left">
@@ -107,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="destinations">
+      <section class="destinations" id="destinations">
         <div class="container">
           <div class="destinations_inner">
             <div class="destinations-title">DESTINATIONS</div>
@@ -169,5 +195,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/scripts.js" defer></script>
   </body>
 </html>

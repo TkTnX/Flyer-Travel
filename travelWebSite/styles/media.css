@@ -187,7 +187,41 @@
 
 @media (max-width: 650px) {
   header {
-    background-position: bottom right;
+    background-position: right left;
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 480px;
+    margin: 200px auto;
+    position: relative;
+    z-index: 3;
+  }
+
+  .mobile-list-inner {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    transform: translateY(-150%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .mobile-list-inner.burger-menu-open {
+    transform: translateY(0%);
+  }
+
+  .closeBtn-header {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+
+  .mobile-list-element {
+    margin-top: 50px;
   }
 
   .nav-link {
@@ -215,13 +249,12 @@
   }
   .header-title-txt {
     font-size: 36px;
-    text-align: right;
+    text-align: left;
   }
   .header-title-btns {
-    margin-left: 180px;
-    margin-right: 0;
     width: 150px;
     flex-direction: column;
+    text-align: center;
   }
   .about_us-inner {
     gap: 40px;
@@ -254,9 +287,27 @@
     height: 300px;
     width: 200px;
   }
+  .card-estimation {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .card-estimation img {
+    max-width: 25px;
+  }
+
+  .destination-score {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 475px) {
+  .burger-menu {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .header-title-btns {
     margin-left: 80px;
   }
@@ -311,6 +362,18 @@
     max-height: 400px;
     width: 350px;
   }
+  .card-estimation {
+    flex-direction: row;
+    margin-right: 10px;
+  }
+
+  .card-estimation img {
+    max-width: 75px;
+  }
+
+  .destination-score {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -320,6 +383,18 @@
   .header-nav {
     margin-left: 200px;
   }
+  .card-estimation {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .card-estimation img {
+    max-width: 25px;
+  }
+
+  .destination-score {
+    font-size: 10px;
+  }
   .header-title-txt {
     margin-top: -150px;
     text-align: center;
@@ -327,5 +402,39 @@
   }
   .header-title-btns {
     margin-left: -40px;
+  }
+
+  .burger-menu {
+    margin-top: 250px;
+  }
+
+  .mobile-list-contact_btn {
+    display: block;
+    margin-bottom: 50px;
+  }
+  @media (max-width: 280px) {
+    .header-title-btns {
+      margin-left: -90px;
+    }
+
+    .about_us-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about_us-right {
+      margin-top: 100px;
+    }
+
+    .destinations-title {
+      font-size: 14px;
+      text-align: center;
+      margin: 0;
+    }
+
+    .destinations-subtitle {
+      flex-direction: column;
+      margin: 0;
+      gap: 0;
+    }
   }
 }
